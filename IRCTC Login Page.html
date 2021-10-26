@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Train</title>
+    <style>
+body{
+background-image: url(https://akm-img-a-in.tosshub.com/businesstoday/images/story/202003/indian_railway_660_122817022237_220320014030.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+    </style>
+    
+</head>
+<body>
+    <h1>Train Ticket booking</h1>
+    <fieldset>
+        <legend>IRCTC Train Ticket Booking</legend>
+    <form action="login.html" target="_blank">
+        <label for="fromStation">From</label> 
+        <input type="text" name="fromStation" id ="fromStation" required autofocus list="stations"><br><br>
+        <datalist id="stations">
+            <option disabled>--select--</option>
+            <option value="MAS">Chennai Central</option>
+            <option value="CGL">Chengalpat</option>
+            <option value="MDU">Madurai</option>
+        </datalist>
+        <label for="to">To</label>
+        <input type="text" name="toStation" id ="toStation"required list="stations"><br><br>
+        <label for ="journeyDate">Journey Date</label><br>
+        <input type ="date" id="journeyDate" name="journeyDate" value="2021-10-21", min="2021-10-21", max="2022-01-22"><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        
+    </form>
+    </fieldset>
+
+    
+
+</body>
+</html>
